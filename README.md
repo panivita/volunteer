@@ -1,6 +1,6 @@
 # Web page of the Volunteer Program 'Volunteers needed'
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+'Volunteers needed' is website, where people can volunteer to work at an event.
 
 ## Test
 
