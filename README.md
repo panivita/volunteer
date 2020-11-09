@@ -13,8 +13,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## List of used libraries and frameworks
 
-1. Open-source, front end, JavaScript library [I'm an inline-style link with title](https://reactjs.org/ "ReactJs").
-2. CSS framework React Bootstrap.
-3. Icon library React Bootstrap Icons.
-4. Conditional validation with Yup and Formik.
-5. For map and video was used React Iframe.
+1. Open-source, front end, JavaScript library [ReactJs](https://reactjs.org/).
+2. CSS framework [React Bootstrap](https://react-bootstrap.netlify.app/).
+3. Icon library [React Bootstrap Icons](https://www.npmjs.com/package/react-bootstrap-icons).
+4. Conditional validation with [Yup and Formik](https://formik.org/docs/guides/validation).
+5. For map and video was used [React Iframe](https://www.npmjs.com/package/react-iframe).
