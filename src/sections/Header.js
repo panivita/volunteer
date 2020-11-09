@@ -6,10 +6,9 @@ import "./custom.css";
 export const Header = () => {
   return (
     <Navbar expand="lg">
-      
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto custom-nav" bsStyle="tabs">
+        <Nav className="mr-auto custom-nav">
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#event">Events</Nav.Link>
         </Nav>

@@ -30,7 +30,19 @@ export const FormComponent = () => {
           setSubmitting(false);
         }, 400);
       }}
-      initialValues={{ firstName: "", lastName: "", skills: [], gender: "" }}
+      initialValues={{
+        firstName: "",
+        lastName: "",
+        phone: "",
+        email: "",
+        country: "",
+        zip: "",
+        city: "",
+        street: "",
+        gender: "",
+        skills: [],
+        comments: "",
+      }}
       validate={(values) => {
         const errors = {};
         if (!/^[A-Za-z]+$/i.test(values.firstName)) {
@@ -133,7 +145,6 @@ export const FormComponent = () => {
                 <Form.Control
                   as="select"
                   className="mr-sm-2"
-                  defaultValue="Choose..."
                   name="country"
                   value={values.country}
                   onChange={handleChange}
