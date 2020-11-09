@@ -60,7 +60,14 @@ export const FormComponent = () => {
         isValid,
         errors,
       }) => (
-        <Container>
+        <Container
+          style={{ backgroundColor: "#d6dcdb", borderRadius: "10px" }}
+          fluid="xl"
+          id="volunteer"
+        >
+          <h2 className="form-info">
+            Full up the application form and join our family
+          </h2>
           <Form noValidate onSubmit={handleSubmit}>
             <Form.Row>
               <Form.Group as={Col}>
@@ -139,6 +146,48 @@ export const FormComponent = () => {
                   {errors.country}
                 </Form.Control.Feedback>
               </Form.Group>
+              <Col>
+                <Form.Control
+                  type="text"
+                  placeholder="Zip"
+                  name="zip"
+                  value={values.zip}
+                  onChange={handleChange}
+                  isInvalid={!!errors.zip}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.zip}
+                </Form.Control.Feedback>
+              </Col>
+              <Col>
+                <Form.Control
+                  type="text"
+                  placeholder="City"
+                  name="city"
+                  value={values.city}
+                  onChange={handleChange}
+                  isInvalid={!!errors.city}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.city}
+                </Form.Control.Feedback>
+              </Col>
+            </Form.Row>
+
+            <Form.Row style={{ marginBottom: "2%" }}>
+              <Col xs={7}>
+                <Form.Control
+                  placeholder="Street"
+                  type="text"
+                  name="street"
+                  value={values.street}
+                  onChange={handleChange}
+                  isInvalid={!!errors.street}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.street}
+                </Form.Control.Feedback>
+              </Col>
               <Form.Group
                 as={Col}
                 style={{ marginTop: "3%" }}
@@ -170,50 +219,8 @@ export const FormComponent = () => {
                 />
               </Form.Group>
             </Form.Row>
-
-            <Form.Row style={{ marginBottom: "2%" }}>
-              <Col xs={5}>
-                <Form.Control
-                  type="text"
-                  placeholder="City"
-                  name="city"
-                  value={values.city}
-                  onChange={handleChange}
-                  isInvalid={!!errors.city}
-                />
-                <Form.Control.Feedback type="invalid">
-                  {errors.city}
-                </Form.Control.Feedback>
-              </Col>
-              <Col xs={5}>
-                <Form.Control
-                  placeholder="Street"
-                  type="text"
-                  name="street"
-                  value={values.street}
-                  onChange={handleChange}
-                  isInvalid={!!errors.street}
-                />
-                <Form.Control.Feedback type="invalid">
-                  {errors.street}
-                </Form.Control.Feedback>
-              </Col>
-              <Col>
-                <Form.Control
-                  type="text"
-                  placeholder="Zip"
-                  name="zip"
-                  value={values.zip}
-                  onChange={handleChange}
-                  isInvalid={!!errors.zip}
-                />
-                <Form.Control.Feedback type="invalid">
-                  {errors.zip}
-                </Form.Control.Feedback>
-              </Col>
-            </Form.Row>
             <Form.Row>
-              <Form.Group style={{ width: "50%", marginLeft: "1%" }}>
+              <Form.Group style={{ width: "49%", marginLeft: "2%" }}>
                 <Form.Label>Skills</Form.Label>
                 <Form.Group
                   id="formGridCheckbox"
@@ -270,13 +277,13 @@ export const FormComponent = () => {
                   />
                 </Form.Group>
               </Form.Group>
-              <Form.Group controlId="textarea1" style={{ width: "49%" }}>
+              <Form.Group controlId="textarea1" style={{ width: "47%" }}>
                 <Form.Label>Comments and other relevant experience</Form.Label>
                 <Form.Control
                   as="textarea"
                   rows={6}
                   placeholder="Use this field to enter relevant comments and/or experience"
-                  name='comments'
+                  name="comments"
                   value={values.comments}
                   onChange={handleChange}
                 />
