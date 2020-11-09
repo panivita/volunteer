@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="footer-container">
       <Container fluid="xl" id="contact">
         <ul className="contact-details">
-          <li style={{ width: "40%" }}>© 2020 Victoria Kush</li>
+          <li className="copyright">© 2020 Victoria Kush</li>
           <li className="phone-info">
             <div className="phone-icon">
               <Phone />

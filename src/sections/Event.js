@@ -1,5 +1,6 @@
 import React from "react";
 import Iframe from "react-iframe";
+import Logo from "../images/logo.png";
 import { Container, Media } from "react-bootstrap";
 import "./custom.css";
 
@@ -9,6 +10,11 @@ export const Event = () => {
       <h2 className="section-head">
         Video about volunteer events Volunteers needed
       </h2>
+      <section className="logo-with-line">
+        <div className="line-1"></div>
+        <img src={Logo} alt="logo" className="logo-img" />
+        <div className="line-2"></div>
+      </section>
       <p className="video-info">
         Check the video below to get an empression of Volunteers needed events
         and how mush Volunteers means for us.

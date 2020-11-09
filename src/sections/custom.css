@@ -25,7 +25,7 @@
 }
 
 .container-xl {
-    margin: 5% auto;
+    margin: 4% auto;
 }
 
 h1, h2, h3 {
@@ -114,7 +114,7 @@ h1, h2, h3 {
     color: #fff;
     background-color: #0b3f85;
     border-color: #0b3f85;
-    margin-left: 45%;
+    margin-left: 48%;
     margin-bottom: 3%;
 }
 
@@ -183,6 +183,10 @@ h1, h2, h3 {
 
 .phone-info, .email-info {
     display: flex;
+}
+
+.copyright {
+    width: 40%;
 }
 
 .email-info {
@@ -255,7 +259,7 @@ h1, h2, h3 {
     .map {
         margin: 0 auto 5%;
     }
-    .contact-details li {
+    .copyright, .email-info, .phone-info {
         width: 100%;
     }
     .email-info, .phone-info {

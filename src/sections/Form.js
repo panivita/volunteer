@@ -125,10 +125,11 @@ export const FormComponent = () => {
                 </Form.Control.Feedback>
               </Form.Group>
             </Form.Row>
-
+            <Form.Row>
+              <Form.Label>Address</Form.Label>
+            </Form.Row>
             <Form.Row>
               <Form.Group as={Col} controlId="formGridCountry">
-                <Form.Label>Address</Form.Label>
                 <Form.Control
                   as="select"
                   className="mr-sm-2"
@@ -175,7 +176,7 @@ export const FormComponent = () => {
             </Form.Row>
 
             <Form.Row style={{ marginBottom: "2%" }}>
-              <Col xs={7}>
+              <Col xs={6}>
                 <Form.Control
                   placeholder="Street"
                   type="text"
@@ -190,7 +191,6 @@ export const FormComponent = () => {
               </Col>
               <Form.Group
                 as={Col}
-                style={{ marginTop: "3%" }}
                 role="group"
                 aria-labelledby="my-radio-group"
               >
@@ -281,7 +281,7 @@ export const FormComponent = () => {
                 <Form.Label>Comments and other relevant experience</Form.Label>
                 <Form.Control
                   as="textarea"
-                  rows={6}
+                  rows={7}
                   placeholder="Use this field to enter relevant comments and/or experience"
                   name="comments"
                   value={values.comments}
