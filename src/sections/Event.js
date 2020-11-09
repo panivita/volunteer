@@ -8,7 +8,7 @@ export const Event = () => {
   return (
     <Container style={{ textAlign: "center" }} fluid="xl" id="event">
       <h2 className="section-head">
-        Video about volunteer events Volunteers needed
+        Video about volunteer events "Volunteers needed"
       </h2>
       <section className="logo-with-line">
         <div className="line-1"></div>
@@ -16,7 +16,7 @@ export const Event = () => {
         <div className="line-2"></div>
       </section>
       <p className="video-info">
-        Check the video below to get an empression of Volunteers needed events
+        Check the video below to get an empression of "Volunteers needed" events
         and how mush Volunteers means for us.
       </p>
       <Iframe
