@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <Container style={{ textAlign: "center" }} fluid="xl" id="home">
       <h1 className="welcome-info">
-        Welcome to Volunteer Programs Volunteers needed
+        Welcome to Volunteer Program "Volunteers needed"
       </h1>
       <section className="logo-with-line">
         <div className="line-1"></div>
